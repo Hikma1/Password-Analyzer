@@ -73,6 +73,13 @@ progress {
   overflow: hidden;
   margin-bottom: 10px;
 }
+progress::-webkit-progress-bar {
+  background-color: #e0e0e0; /* light gray background */
+}
+progress::-webkit-progress-value {
+  background-color: #007BFF; /* blue fill color */
+  transition: width 0.3s ease; /* smooth animation when the bar changes */
+}
 
 /* Feedback text */
 #feedback {
