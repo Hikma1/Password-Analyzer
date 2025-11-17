@@ -1,3 +1,4 @@
+/*
 // 1. Select elements
 const passwordInput = document.getElementById('passwordInput');
 const strengthBar = document.getElementById('strengthBar');
@@ -21,3 +22,8 @@ function calculateStrength(password) {
   // We’ll add rules here
   return { value: 0, color: '#007BFF', text: '' };
 }
+function analyzePassword() {
+  const password = passwordInput.value;
+  console.log(password);
+}
+*/
