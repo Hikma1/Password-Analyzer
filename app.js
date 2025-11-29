@@ -1,5 +1,4 @@
-/*
-// 1. Select elements
+ //1. Select elements
 const passwordInput = document.getElementById('passwordInput');
 const strengthBar = document.getElementById('strengthBar');
 const feedback = document.getElementById('feedback');
@@ -26,4 +25,3 @@ function analyzePassword() {
   const password = passwordInput.value;
   console.log(password);
 }
-*/
