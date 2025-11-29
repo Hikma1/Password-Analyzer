@@ -1,27 +1,31 @@
- //1. Select elements
-const passwordInput = document.getElementById('passwordInput');
-const strengthBar = document.getElementById('strengthBar');
-const feedback = document.getElementById('feedback');
+// 1️⃣ Select elements
+const passwordInput = document.getElementById("passwordInput");
+const strengthBar = document.getElementById("strengthBar");
+const feedback = document.getElementById("feedback");
 
-// 2. Add event listener on input
-passwordInput.addEventListener('input', function() {
-  const password = passwordInput.value;
+// 2️⃣ Listen to typing
+passwordInput.addEventListener("input", analyzePassword);
 
-  // 3. Calculate strength (we’ll fill this logic next)
-  const strength = calculateStrength(password);
-
-  // 4. Update progress bar and feedback
-  strengthBar.value = strength.value;   // 0 - 100
-  strengthBar.style.backgroundColor = strength.color;
-  feedback.textContent = strength.text;
-});
-
-// 5. Strength calculation function (to implement next)
-function calculateStrength(password) {
-  // We’ll add rules here
-  return { value: 0, color: '#007BFF', text: '' };
-}
+// 3️⃣ Function to calculate password strength
 function analyzePassword() {
   const password = passwordInput.value;
-  console.log(password);
+  let score = 0;
+
+  // Length ≥ 8
+  if (password.length >= 8) score += 20;
+
+  // Contains number
+  if (/\d/.test(password)) score += 20;
+
+  // Contains symbol
+  if (/[\W_]/.test(password)) score += 20;
+
+  // Contains uppercase
+  if (/[A-Z]/.test(password)) score += 20;
+
+  // Contains lowercase
+  if (/[a-z]/.test(password)) score += 20;
+
+  // For now, just log the score
+  console.log("Score:", score);
 }
