@@ -5,26 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Password Strength Analyzer</title>
   <link rel="stylesheet" href="style.css">
-  <script src="app.js"></script>
 </head>
 <body>
+
   <section class="container">
     <h1>Password Strength Analyzer</h1>
-    
-    <label for="passwordInput">Enter your password:</label>
+
     <input type="text" id="passwordInput" placeholder="Enter your password">
-    
-    <span id="visibilityIcon"></span>
-    
-    <button onclick="analyzePassword()">Analyze</button>
-    
+
     <progress id="strengthBar" value="0" max="100"></progress>
-    
+
     <p id="feedback"></p>
-    
-    <button onclick="copyToClipboard()">Copy Password</button>
-    <button onclick="generatePassword()">Generate Password</button>
   </section>
- 
+
+  <!-- Link JS at the end of body -->
+  <script src="app.js"></script>
 </body>
 </html>
