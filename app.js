@@ -11,21 +11,35 @@ function analyzePassword() {
   const password = passwordInput.value;
   let score = 0;
 
-  // Length ≥ 8
   if (password.length >= 8) score += 20;
-
-  // Contains number
   if (/\d/.test(password)) score += 20;
-
-  // Contains symbol
   if (/[\W_]/.test(password)) score += 20;
-
-  // Contains uppercase
   if (/[A-Z]/.test(password)) score += 20;
-
-  // Contains lowercase
   if (/[a-z]/.test(password)) score += 20;
 
-  // For now, just log the score
-  console.log("Score:", score);
+  // Update progress bar
+  strengthBar.value = score;
+
+  // Feedback text
+  if (score <= 20) {
+    feedback.textContent = "Very Weak";
+    feedback.style.color = "red";
+  }
+  else if (score <= 40) {
+    feedback.textContent = "Weak";
+    feedback.style.color = "orange";
+  }
+  else if (score <= 60) {
+    feedback.textContent = "Medium";
+    feedback.style.color = "goldenrod";
+  }
+  else if (score <= 80) {
+    feedback.textContent = "Strong";
+    feedback.style.color = "green";
+  }
+  else {
+    feedback.textContent = "Very Strong";
+    feedback.style.color = "darkgreen";
+  }
 }
+
