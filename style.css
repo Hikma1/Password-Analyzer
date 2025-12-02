@@ -102,4 +102,7 @@ progress::-webkit-progress-value {
 /* Medium */
 .medium {
   accent-color: goldenrod;
+}/* Strong */
+.strong {
+  accent-color: green;
 }
