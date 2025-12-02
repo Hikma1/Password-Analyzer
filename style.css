@@ -89,3 +89,17 @@ progress::-webkit-progress-value {
   color: #333;
   margin-top: 10px;
 }
+/* Weak */
+.weak {
+  accent-color: red;
+}
+
+/* Slightly weak */
+.fair {
+  accent-color: orange;
+}
+
+/* Medium */
+.medium {
+  accent-color: goldenrod;
+}
