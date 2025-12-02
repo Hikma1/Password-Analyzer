@@ -106,3 +106,7 @@ progress::-webkit-progress-value {
 .strong {
   accent-color: green;
 }
+/* Very strong */
+.very-strong {
+  accent-color: darkgreen;
+}
