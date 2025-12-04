@@ -41,29 +41,18 @@ function analyzePassword() {
     feedback.textContent = "Very Strong";
     feedback.style.color = "darkgreen";
   }
-  let color = "red";
+  // Determine color based on score
+let color = "red";
+if (score <= 20) color = "red";
+else if (score <= 40) color = "orange";
+else if (score <= 60) color = "goldenrod";
+else if (score <= 80) color = "green";
+else color = "darkgreen";
 
-if (score <= 20) {
-  color = "red";
-} 
-else if (score <= 40) {
-  color = "orange";
-}
-else if (score <= 60) {
-  color = "goldenrod";
-}
-else if (score <= 80) {
-  color = "green";
-}
-else {
-  color = "darkgreen";
-}
-// Update progress bar fill color
-strengthBar.style.setProperty("--fill-color", color);
-strengthBar.style.backgroundColor = "#e0e0e0"; // optional
-strengthBar.style.color = color; // fallback
-strengthBar.style.setProperty("background-color", "#e0e0e0");
-strengthBar.style.setProperty("accent-color", color); // for Chrome
-strengthBar.style.setProperty("webkitProgressValue", color); // attempt Chrome
+// Update the fill
+const strengthBar = document.getElementById("strengthBar");
+strengthBar.style.width = score + "%";
+strengthBar.style.backgroundColor = color;
+
 }
 
