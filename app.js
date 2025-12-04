@@ -41,5 +41,22 @@ function analyzePassword() {
     feedback.textContent = "Very Strong";
     feedback.style.color = "darkgreen";
   }
+  let color = "red";
+
+if (score <= 20) {
+  color = "red";
+} 
+else if (score <= 40) {
+  color = "orange";
+}
+else if (score <= 60) {
+  color = "goldenrod";
+}
+else if (score <= 80) {
+  color = "green";
+}
+else {
+  color = "darkgreen";
+}
 }
 
