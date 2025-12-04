@@ -58,5 +58,12 @@ else if (score <= 80) {
 else {
   color = "darkgreen";
 }
+// Update progress bar fill color
+strengthBar.style.setProperty("--fill-color", color);
+strengthBar.style.backgroundColor = "#e0e0e0"; // optional
+strengthBar.style.color = color; // fallback
+strengthBar.style.setProperty("background-color", "#e0e0e0");
+strengthBar.style.setProperty("accent-color", color); // for Chrome
+strengthBar.style.setProperty("webkitProgressValue", color); // attempt Chrome
 }
 
