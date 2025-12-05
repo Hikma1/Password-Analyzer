@@ -6,3 +6,16 @@ passwordInput.addEventListener("input", analyzePassword);
 function analyzePassword() {
   const password = passwordInput.value;
   let score = 0;
+   if (password.length >= 8) score += 20;
+  if (/[0-9]/.test(password)) score += 20;
+  if (/[A-Z]/.test(password)) score += 20;
+  if (/[a-z]/.test(password)) score += 20;
+  if (/[^A-Za-z0-9]/.test(password)) score += 20;
+
+  let color = "red";
+  let text = "Very Weak";
+
+  if (score <= 20) {
+    color = "red";
+    text = "Very Weak";
+  } 
