@@ -19,3 +19,19 @@ function analyzePassword() {
     color = "red";
     text = "Very Weak";
   } 
+  else if (score <= 40) {
+    color = "orange";
+    text = "Weak";
+  }
+  else if (score <= 60) {
+    color = "goldenrod";
+    text = "Medium";
+  }
+  else if (score <= 80) {
+    color = "green";
+    text = "Strong";
+  }
+  else {
+    color = "darkgreen";
+    text = "Very Strong";
+  }
