@@ -35,3 +35,10 @@ function analyzePassword() {
     color = "darkgreen";
     text = "Very Strong";
   }
+   // Visual update
+  strengthBar.style.width = score + "%";
+  strengthBar.style.backgroundColor = color;
+
+  feedback.textContent = text;
+  feedback.style.color = color;
+}
