@@ -6,3 +6,25 @@
   <title>Password Strength Analyzer</title>
   <link rel="stylesheet" href="style.css">
 </head>
+<body>
+
+  <section class="container">
+    <h1>Password Strength Analyzer</h1>
+
+    <input type="text" id="passwordInput" placeholder="Enter your password">
+
+    <div class="progress-container">
+      <div class="progress-fill" id="strengthBar"></div>
+    </div>
+
+    <p id="feedback"></p>
+
+    <ul class="requirements">
+      <li id="req-length">✖ At least 8 characters</li>
+      <li id="req-upper">✖ Contains uppercase letter</li>
+      <li id="req-lower">✖ Contains lowercase letter</li>
+      <li id="req-number">✖ Contains a number</li>
+      <li id="req-symbol">✖ Contains special character</li>
+    </ul>
+
+  </section>
