@@ -56,3 +56,6 @@ input[type="text"] {
   list-style: none;
   font-size: 14px;
 }
+.requirements li {
+  margin-bottom: 4px;
+}
