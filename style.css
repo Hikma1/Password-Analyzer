@@ -59,3 +59,6 @@ input[type="text"] {
 .requirements li {
   margin-bottom: 4px;
 }
+.valid {
+  color: green;
+}
