@@ -50,3 +50,9 @@ input[type="text"] {
   font-weight: 600;
   margin-top: 10px;
 }
+.requirements {
+  margin-top: 15px;
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+}
