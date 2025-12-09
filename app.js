@@ -13,3 +13,24 @@ passwordInput.addEventListener("input", analyzePassword);
 function analyzePassword() {
   const password = passwordInput.value;
   let score = 0;
+   // Requirements
+  updateRequirement(reqLength, password.length >= 8);
+  updateRequirement(reqUpper, /[A-Z]/.test(password));
+  updateRequirement(reqLower, /[a-z]/.test(password));
+  updateRequirement(reqNumber, /\d/.test(password));
+  updateRequirement(reqSymbol, /[\W_]/.test(password));
+
+  // Score system
+  if (password.length >= 8) score += 20;
+  if (/\d/.test(password)) score += 20;
+  if (/[\W_]/.test(password)) score += 20;
+  if (/[A-Z]/.test(password)) score += 20;
+  if (/[a-z]/.test(password)) score += 20;
+// Color
+  let color = "red";
+  if (score <= 20) color = "red";
+  else if (score <= 40) color = "orange";
+  else if (score <= 60) color = "goldenrod";
+  else if (score <= 80) color = "green";
+  else color = "darkgreen";
+
