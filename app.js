@@ -33,4 +33,7 @@ function analyzePassword() {
   else if (score <= 60) color = "goldenrod";
   else if (score <= 80) color = "green";
   else color = "darkgreen";
-
+ // Update bar
+  strengthBar.style.width = score + "%";
+  strengthBar.style.backgroundColor = color;
+}
