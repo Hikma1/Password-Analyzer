@@ -37,3 +37,10 @@ function analyzePassword() {
   strengthBar.style.width = score + "%";
   strengthBar.style.backgroundColor = color;
 }
+// Helper function
+function updateRequirement(element, condition) {
+  if (condition) {
+    element.textContent = "✔ " + element.textContent.slice(2);
+    element.classList.add("valid");
+    element.classList.remove("invalid");
+  }
