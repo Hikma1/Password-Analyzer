@@ -44,3 +44,9 @@ function updateRequirement(element, condition) {
     element.classList.add("valid");
     element.classList.remove("invalid");
   }
+  else {
+    element.textContent = "✖ " + element.textContent.slice(2);
+    element.classList.add("invalid");
+    element.classList.remove("valid");
+  }
+}
