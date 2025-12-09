@@ -8,3 +8,8 @@ const reqUpper = document.getElementById("req-upper");
 const reqLower = document.getElementById("req-lower");
 const reqNumber = document.getElementById("req-number");
 const reqSymbol = document.getElementById("req-symbol");
+passwordInput.addEventListener("input", analyzePassword);
+
+function analyzePassword() {
+  const password = passwordInput.value;
+  let score = 0;
