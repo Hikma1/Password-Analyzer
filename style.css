@@ -69,3 +69,12 @@ input[type="text"] {
   position: relative;
   width: 100%;
 }
+.eye-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  user-select: none;
+}
