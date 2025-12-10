@@ -51,3 +51,8 @@ function updateRequirement(element, condition) {
   }
 }
 const toggleEye = document.getElementById("toggleEye");
+toggleEye.addEventListener("click", () => {
+  if (passwordInput.type === "password") {
+    passwordInput.type = "text";
+    toggleEye.textContent = "👁️‍🗨️"; // open
+  } 
