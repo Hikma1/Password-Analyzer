@@ -65,3 +65,7 @@ input[type="text"] {
 .invalid {
   color: red;
 }
+.password-wrapper {
+  position: relative;
+  width: 100%;
+}
