@@ -50,3 +50,4 @@ function updateRequirement(element, condition) {
     element.classList.remove("valid");
   }
 }
+const toggleEye = document.getElementById("toggleEye");
