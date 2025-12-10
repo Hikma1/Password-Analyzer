@@ -55,4 +55,8 @@ toggleEye.addEventListener("click", () => {
   if (passwordInput.type === "password") {
     passwordInput.type = "text";
     toggleEye.textContent = "👁️‍🗨️"; // open
-  } 
+  } else {
+    passwordInput.type = "password";
+    toggleEye.textContent = "👁️"; // closed
+  }
+});
