@@ -69,3 +69,7 @@ copyBtn.addEventListener("click", () => {
     feedback.style.color = "red";
     return;
   }
+   navigator.clipboard.writeText(password)
+    .then(() => {
+      feedback.textContent = "Password copied ✔️";
+      feedback.style.color = "green";
