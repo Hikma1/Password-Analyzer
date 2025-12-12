@@ -61,3 +61,11 @@ toggleEye.addEventListener("click", () => {
   }
 });
 const copyBtn = document.getElementById("copyBtn");
+copyBtn.addEventListener("click", () => {
+  const password = passwordInput.value;
+
+  if (password === "") {
+    feedback.textContent = "Nothing to copy!";
+    feedback.style.color = "red";
+    return;
+  }
