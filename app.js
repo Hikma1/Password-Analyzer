@@ -60,3 +60,4 @@ toggleEye.addEventListener("click", () => {
     toggleEye.textContent = "👁️"; // closed
   }
 });
+const copyBtn = document.getElementById("copyBtn");
