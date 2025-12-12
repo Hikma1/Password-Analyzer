@@ -73,3 +73,8 @@ copyBtn.addEventListener("click", () => {
     .then(() => {
       feedback.textContent = "Password copied ✔️";
       feedback.style.color = "green";
+        setTimeout(() => {
+        feedback.textContent = "";
+      }, 1500);
+    });
+});
