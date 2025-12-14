@@ -2,6 +2,8 @@
 const passwordInput = document.getElementById("passwordInput");
 const strengthBar = document.getElementById("strengthBar");
 const feedback = document.getElementById("feedback");
+const scoreText = document.getElementById("scoreText");
+
 // Requirement elements
 const reqLength = document.getElementById("req-length");
 const reqUpper = document.getElementById("req-upper");
@@ -26,6 +28,9 @@ function analyzePassword() {
   if (/[\W_]/.test(password)) score += 20;
   if (/[A-Z]/.test(password)) score += 20;
   if (/[a-z]/.test(password)) score += 20;
+
+  scoreText.textContent = `Strength: ${score} / 100`;
+
 // Color
   let color = "red";
   if (score <= 20) color = "red";
