@@ -77,4 +77,4 @@ copyBtn.addEventListener("click", () => {
         feedback.textContent = "";
       }, 1500);
     });
-});
+}); 
