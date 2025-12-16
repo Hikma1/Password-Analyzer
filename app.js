@@ -4,6 +4,12 @@ const strengthBar = document.getElementById("strengthBar");
 const feedback = document.getElementById("feedback");
 const scoreText = document.getElementById("scoreText");
 
+const checkLength = document.getElementById("check-length");
+const checkUpper = document.getElementById("check-upper");
+const checkLower = document.getElementById("check-lower");
+const checkNumber = document.getElementById("check-number");
+const checkSymbol = document.getElementById("check-symbol");
+
 // Requirement elements
 const reqLength = document.getElementById("req-length");
 const reqUpper = document.getElementById("req-upper");
