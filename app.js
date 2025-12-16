@@ -69,6 +69,14 @@ if (/\d/.test(password)) {
   checkNumber.classList.remove("valid");
   checkNumber.textContent = "❌ At least one number";
 }
+// Symbol
+if (/[\W_]/.test(password)) {
+  checkSymbol.classList.add("valid");
+  checkSymbol.textContent = "✅ At least one symbol";
+} else {
+  checkSymbol.classList.remove("valid");
+  checkSymbol.textContent = "❌ At least one symbol";
+}
 
 // Color
   let color = "red";
