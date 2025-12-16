@@ -61,6 +61,15 @@ if (/[a-z]/.test(password)) {
   checkLower.classList.remove("valid");
   checkLower.textContent = "❌ At least one lowercase letter";
 }
+// Number
+if (/\d/.test(password)) {
+  checkNumber.classList.add("valid");
+  checkNumber.textContent = "✅ At least one number";
+} else {
+  checkNumber.classList.remove("valid");
+  checkNumber.textContent = "❌ At least one number";
+}
+
 // Color
   let color = "red";
   if (score <= 20) color = "red";
