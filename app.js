@@ -45,6 +45,14 @@ if (password.length >= 8) {
   checkLength.classList.remove("valid");
   checkLength.textContent = "❌ At least 8 characters";
 }
+// Uppercase
+if (/[A-Z]/.test(password)) {
+  checkUpper.classList.add("valid");
+  checkUpper.textContent = "✅ At least one uppercase letter";
+} else {
+  checkUpper.classList.remove("valid");
+  checkUpper.textContent = "❌ At least one uppercase letter";
+}
 // Color
   let color = "red";
   if (score <= 20) color = "red";
