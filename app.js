@@ -37,6 +37,14 @@ function analyzePassword() {
 
   scoreText.textContent = `Strength: ${score} / 100`;
 
+  // Length check
+if (password.length >= 8) {
+  checkLength.classList.add("valid");
+  checkLength.textContent = "✅ At least 8 characters";
+} else {
+  checkLength.classList.remove("valid");
+  checkLength.textContent = "❌ At least 8 characters";
+}
 // Color
   let color = "red";
   if (score <= 20) color = "red";
