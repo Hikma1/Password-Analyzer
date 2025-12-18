@@ -10,6 +10,9 @@ const checkLower = document.getElementById("check-lower");
 const checkNumber = document.getElementById("check-number");
 const checkSymbol = document.getElementById("check-symbol");
 
+const historyList = document.getElementById("historyList");
+let strengthHistory = [];
+
 // Requirement elements
 const reqLength = document.getElementById("req-length");
 const reqUpper = document.getElementById("req-upper");
