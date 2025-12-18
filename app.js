@@ -87,6 +87,13 @@ const entry = {
   score: score
 };
 
+strengthHistory.push(entry);
+
+// Keep only last 5
+if (strengthHistory.length > 5) {
+  strengthHistory.shift();
+}
+
 // Color
   let color = "red";
   if (score <= 20) color = "red";
