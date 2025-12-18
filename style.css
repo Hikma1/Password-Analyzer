@@ -108,3 +108,9 @@ input[type="text"] {
 .checklist li.valid {
   color: green;
 }
+.history {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  font-size: 14px;
+}
