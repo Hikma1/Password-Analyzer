@@ -151,3 +151,9 @@ copyBtn.addEventListener("click", () => {
 }); 
 function renderHistory() {
   historyList.innerHTML = "";
+   strengthHistory.forEach((item, index) => {
+    const li = document.createElement("li");
+    li.textContent = `${index + 1}. ${item.label} (${item.score}/100)`;
+    historyList.appendChild(li);
+  });
+}
