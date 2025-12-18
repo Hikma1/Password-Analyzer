@@ -94,6 +94,9 @@ if (strengthHistory.length > 5) {
   strengthHistory.shift();
 }
 
+// Update history UI
+renderHistory();
+
 // Color
   let color = "red";
   if (score <= 20) color = "red";
