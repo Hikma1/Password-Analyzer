@@ -114,3 +114,9 @@ input[type="text"] {
   margin-top: 10px;
   font-size: 14px;
 }
+.history li {
+  padding: 6px 8px;
+  margin-bottom: 5px;
+  background: #f4f4f4;
+  border-radius: 6px;
+}
