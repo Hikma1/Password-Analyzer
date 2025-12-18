@@ -149,3 +149,5 @@ copyBtn.addEventListener("click", () => {
       }, 1500);
     });
 }); 
+function renderHistory() {
+  historyList.innerHTML = "";
