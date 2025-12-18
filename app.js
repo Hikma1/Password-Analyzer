@@ -81,6 +81,12 @@ if (/[\W_]/.test(password)) {
   checkSymbol.textContent = "❌ At least one symbol";
 }
 
+// Save history entry
+const entry = {
+  label: feedback.textContent,
+  score: score
+};
+
 // Color
   let color = "red";
   if (score <= 20) color = "red";
