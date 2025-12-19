@@ -139,3 +139,8 @@ input[type="text"] {
     font-size: 13px;
   }
 }
+@media (hover: hover) {
+  button:hover {
+    background-color: #0056b3;
+  }
+}
