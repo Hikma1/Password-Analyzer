@@ -127,3 +127,15 @@ input[type="text"] {
   background: #f4f4f4;
   border-radius: 6px;
 }
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+  }
+  h1 {
+    font-size: 18px;
+  }
+
+  #feedback {
+    font-size: 13px;
+  }
+}
