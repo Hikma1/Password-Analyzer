@@ -125,10 +125,10 @@ const toggleEye = document.getElementById("toggleEye");
 toggleEye.addEventListener("click", () => {
   if (passwordInput.type === "password") {
     passwordInput.type = "text";
-    toggleEye.textContent = "👁️‍🗨️"; // open
+    toggleEye.textContent = "👁️"; // open
   } else {
     passwordInput.type = "password";
-    toggleEye.textContent = "👁️"; // closed
+    toggleEye.textContent = "👁️‍🗨️"; // closed
   }
 });
 const copyBtn = document.getElementById("copyBtn");
