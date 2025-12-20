@@ -164,3 +164,7 @@ body.dark .progress-container {
 body.dark #feedback {
   color: #ddd;
 }
+body.dark button {
+  background-color: #444;
+  color: #fff;
+}
