@@ -168,3 +168,6 @@ body.dark button {
   background-color: #444;
   color: #fff;
 }
+body.dark button:hover {
+  background-color: #666;
+}
