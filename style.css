@@ -157,3 +157,7 @@ body.dark input {
   color: #ffffff;
   border: 1px solid #555;
 }
+
+body.dark .progress-container {
+  background-color: #333;
+}
