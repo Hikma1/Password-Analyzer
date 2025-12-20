@@ -157,3 +157,5 @@ function renderHistory() {
     historyList.appendChild(li);
   });
 }
+
+const themeToggle = document.getElementById("themeToggle");
