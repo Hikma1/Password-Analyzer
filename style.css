@@ -141,7 +141,7 @@ input[type="text"] {
 }
 @media (hover: hover) {
   button:hover {
-    background-color: #0056b3;
+    background-color: #75e482;
   }
 }
 /* Dark mode */
@@ -170,4 +170,13 @@ body.dark button {
 }
 body.dark button:hover {
   background-color: #666;
+}
+.themeToggle{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
 }
