@@ -163,6 +163,6 @@ themeToggle.addEventListener("click", () => {
   document.body.classList.toggle("dark");
 
   if (document.body.classList.contains("dark")) {
-    themeToggle.textContent = "☀️ Light Mode";
+    themeToggle.textContent = "☀️"; // sun icon
   } 
 });
