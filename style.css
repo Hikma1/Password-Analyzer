@@ -171,7 +171,7 @@ body.dark button {
 body.dark button:hover {
   background-color: #666;
 }
-.themeToggle{
+#themeToggle {
   position: absolute;
   top: 15px;
   right: 15px;
