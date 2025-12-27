@@ -123,13 +123,10 @@ function updateRequirement(element, condition) {
 }
 const toggleEye = document.getElementById("toggleEye");
 toggleEye.addEventListener("click", () => {
-  if (passwordInput.type === "password") {
-    passwordInput.type = "text";
-    toggleEye.textContent = "👁️"; // open
-  } else {
-    passwordInput.type = "password";
-    toggleEye.textContent = "👁️‍🗨️"; // closed
-  }
+  const isHidden = passwordInput.type === "password";
+  passwordInput.type = isHidden ? "text" : "password";
+  toggleEye.textContent = isHidden ? "👁️‍🗨️" : "👁️";
+  passwordInput.focus();
 });
 const copyBtn = document.getElementById("copyBtn");
 copyBtn.addEventListener("click", () => {
