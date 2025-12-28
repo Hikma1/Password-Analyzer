@@ -2,49 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Password Strength Analyzer</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <section class="container">
-    <button id="themeToggle">🌙 </button>
-
-    <h1>Password Strength Analyzer</h1>
-    <div class="password-wrapper">
-   <input type="password" id="passwordInput" placeholder="Enter your password" autocomplete="off">
-    <span id="toggleEye" class="eye-icon">👁️</span>
-    <span id="copyBtn" class="copy-icon">📋</span>
-
-  </div>
-    <div class="progress-container">
-      <div class="progress-fill" id="strengthBar"></div>
-      <p id="scoreText">Strength: 0 / 100</p>
-      <ul class="checklist">
-  <li id="check-length">❌ At least 8 characters</li>
-  <li id="check-upper">❌ At least one uppercase letter</li>
-  <li id="check-lower">❌ At least one lowercase letter</li>
-  <li id="check-number">❌ At least one number</li>
-  <li id="check-symbol">❌ At least one symbol</li>
-</ul>
-<h3>Password Strength History</h3>
-<ul id="historyList" class="history"></ul>
-
-    </div>
-
-    <p id="feedback"></p>
-
-    <ul class="requirements">
-      <li id="req-length">✖ At least 8 characters</li>
-      <li id="req-upper">✖ Contains uppercase letter</li>
-      <li id="req-lower">✖ Contains lowercase letter</li>
-      <li id="req-number">✖ Contains a number</li>
-      <li id="req-symbol">✖ Contains special character</li>
-    </ul>
-
-  </section>
- <!-- Link JS -->
-  <script src="app.js"></script>
-</body>
-</html>
