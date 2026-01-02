@@ -46,4 +46,6 @@ h1 {
 .subtitle{
    text-align: center;
   font-size: 14px;
+  opacity: 0.85;
+  margin-bottom: 25px;
 }
