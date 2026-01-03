@@ -53,5 +53,6 @@ h1 {
   position: relative;
 }
 .input{
-  
+  width: 100%;
+  padding: 14px;
 }
