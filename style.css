@@ -61,5 +61,7 @@ h1 {
   font-size: 15px;
 }
 #toogleEye{
+  position: absolute;
+  right: 15px;
 
 }
