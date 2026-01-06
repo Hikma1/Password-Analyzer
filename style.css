@@ -85,6 +85,8 @@ h1 {
 #progress-text {
   height: 100%;
   width: 0%;
+  border-radius: 10px;
+  transition: width 0.4s ease, background 0.4s ease;
 }
 #feedback {
   text-align: center;
