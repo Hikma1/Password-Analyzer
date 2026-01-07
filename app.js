@@ -5,4 +5,6 @@ const toggleEye = document.getElementById("toggleEye");
 const themeToggle = document.getElementById("themeToggle");
 const checks ={
     length: document.getElementById("length"),
+     uppercase: document.getElementById("uppercase"),
+  lowercase: document.getElementById("lowercase"),
 }
