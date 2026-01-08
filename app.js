@@ -19,3 +19,7 @@ function analyzePassword() {
     updateCheck("length",password.length >= 8);
     updateCheck("uppercase", /[A-Z]/.test(password));
     updateCheck("lowercase", /[a-z]/.test(password));
+    updateCheck("number", /[0-9]/.test(password));
+    updateCheck("special", /[!@#$%^&*(),.?":{}|<>]/.test(password));
+
+    score=document.querySelectorAll(".checklist li:contains('✔')").length * 20;
