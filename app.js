@@ -8,5 +8,6 @@ const checks ={
     uppercase: document.getElementById("uppercase"),
     lowercase: document.getElementById("lowercase"),
     number: document.getElementById("number"),
-  special: document.getElementById("special")
+    special: document.getElementById("special")
 }
+passwordInput.addEventListener("input", analyzePassword);
