@@ -23,3 +23,5 @@ function analyzePassword() {
     updateCheck("special", /[!@#$%^&*(),.?":{}|<>]/.test(password));
 
     score=document.querySelectorAll(".checklist li:contains('✔')").length * 20;
+
+    progressBar.style.width = score + "%";
