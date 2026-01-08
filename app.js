@@ -26,4 +26,21 @@ function analyzePassword() {
 
     progressBar.style.width = score + "%";
 
-    if (score <= 20) 
+    if (score <= 20) {
+      progressBar.style.backgroundColor = "red";
+      feedback.textContent = "Very Weak";
+    }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  }
