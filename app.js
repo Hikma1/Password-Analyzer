@@ -15,3 +15,6 @@ passwordInput.addEventListener("input", analyzePassword);
 function analyzePassword() {
     const password = passwordInput.value;
     let score = 0;
+
+    updateCheck("length",password.length >= 8);
+    updateCheck("uppercase", /[A-Z]/.test(password));
