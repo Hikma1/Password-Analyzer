@@ -11,3 +11,7 @@ const checks ={
     special: document.getElementById("special")
 }
 passwordInput.addEventListener("input", analyzePassword);
+
+function analyzePassword() {
+    const password = passwordInput.value;
+    let score = 0;
