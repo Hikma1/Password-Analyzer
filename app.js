@@ -18,3 +18,4 @@ function analyzePassword() {
 
     updateCheck("length",password.length >= 8);
     updateCheck("uppercase", /[A-Z]/.test(password));
+    updateCheck("lowercase", /[a-z]/.test(password));
