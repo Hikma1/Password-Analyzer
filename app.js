@@ -25,3 +25,5 @@ function analyzePassword() {
     score=document.querySelectorAll(".checklist li:contains('✔')").length * 20;
 
     progressBar.style.width = score + "%";
+
+    if (score <= 20) 
