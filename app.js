@@ -30,9 +30,10 @@ function analyzePassword() {
       progressBar.style.backgroundColor = "red";
       feedback.textContent = "Very Weak";
     }
-  
-  
-  
+    else if (score <= 40) {
+      progressBar.style.backgroundColor = "orange";
+      feedback.textContent = "Weak";
+    }
   
   
   
