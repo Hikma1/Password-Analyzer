@@ -47,6 +47,7 @@ function analyzePassword() {
       feedback.textContent = "Very Strong";
     }
     function updateCheck(id, condition) {
+      checks[id].textContent = condition ? "✔ " + checks[id].dataset.text : "✘ " + checks[id].dataset.text;
   
   
   
