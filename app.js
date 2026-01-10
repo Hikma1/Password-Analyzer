@@ -46,6 +46,7 @@ function analyzePassword() {
       progressBar.style.backgroundColor = "green";
       feedback.textContent = "Very Strong";
     }
+    function updateCheck(id, condition) {
   
   
   
