@@ -127,4 +127,6 @@ h1 {
 }
 #progressBar{
   height: 100%;
+  width: 0%;
+  border-radius: 10px;
 }
