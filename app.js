@@ -46,14 +46,11 @@ function analyzePassword() {
       progressBar.style.backgroundColor = "green";
       feedback.textContent = "Very Strong";
     }
-    function updateCheck(id, condition) {
-      checks[id].textContent = condition ? "✔ " + checks[id].dataset.text : "✘ " + checks[id].dataset.text;
-  
-  
-  
-  
-  
-  
-  
-  
   }
+    function updateCheck(id, condition) {
+      checks[id].textContent = condition ? "✔ " + checks[id].dataset.text : "✘ " + checks[id].dataset.text;   
+    }
+toggleEye.addEventListener("click", () => {
+
+
+});
