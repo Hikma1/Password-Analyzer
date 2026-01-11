@@ -151,3 +151,7 @@ body.dark .glass-card {
   background: #4caf50;
   box-shadow: 0 0 10px #4caf50;
 }
+.very-strong {
+  background: #2196f3;
+  box-shadow: 0 0 10px #2196f3;
+}
