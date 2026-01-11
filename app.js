@@ -57,5 +57,6 @@ toggleEye.classList.toggle("fa-eye-slash");
 
 themeToggle.addEventListener("click", () => {
   document.body.classList.toggle("dark");
-  
+  themeToggle.textContent = document.body.classList.contains("dark") ? "☀️" : "🌙";
 });
+
