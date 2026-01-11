@@ -143,3 +143,7 @@ body.dark .glass-card {
   background: #ff4d4d;
   box-shadow: 0 0 10px #ff4d4d;
 }
+.medium {
+  background: #ffc107;
+  color: #ffc107;
+}
