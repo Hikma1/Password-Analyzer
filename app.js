@@ -51,6 +51,7 @@ function analyzePassword() {
       checks[id].textContent = condition ? "✔ " + checks[id].dataset.text : "✘ " + checks[id].dataset.text;   
     }
 toggleEye.addEventListener("click", () => {
-
+passwordInput.type = passwordInput.type === "password" ? "text" : "password";
+toggleEye.classList.toggle("fa-eye-slash");
 
 });
