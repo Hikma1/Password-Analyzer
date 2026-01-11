@@ -56,5 +56,6 @@ toggleEye.classList.toggle("fa-eye-slash");
 });
 
 themeToggle.addEventListener("click", () => {
-
+  document.body.classList.toggle("dark");
+  
 });
