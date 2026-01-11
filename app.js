@@ -53,5 +53,8 @@ function analyzePassword() {
 toggleEye.addEventListener("click", () => {
 passwordInput.type = passwordInput.type === "password" ? "text" : "password";
 toggleEye.classList.toggle("fa-eye-slash");
+});
+
+themeToggle.addEventListener("click", () => {
 
 });
