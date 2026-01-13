@@ -26,6 +26,8 @@ function analyzePassword() {
 
     progressBar.style.width = score + "%";
 
+    progressBar.className = "";
+progressBar.classList.add("strength-animate");
     if (score <= 20) {
       progressBar.style.backgroundColor = "red";
       feedback.textContent = "Very Weak";
