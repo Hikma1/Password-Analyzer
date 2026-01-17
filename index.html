@@ -9,33 +9,21 @@
 <body>
 
   <canvas id="particles"></canvas>
-  <button id="themeToggle">🌙</button>
-
-<div class="container">
   <div class="glass-card">
-    <h1>Password Strength</h1>
-    <p class="subtitle">Create a strong and secure password</p>
+  <h1>Password Strength</h1>
 
-    <div class="input-group">
-      <input type="password" id="passwordInput" placeholder="Enter password">
-      <span id="toggleEye">👁️</span>
-    </div>
+  <div class="input-wrapper">
+    <input type="password" id="passwordInput" placeholder="Enter password" />
+    <span id="toggleEye">👁</span>
+  </div>
 
-    <div class="progress-container">
-      <div id="progressBar"></div>
-    </div>
-    <p id="feedback">Strength: —</p>
-    
-    <ul class="checklist">
-      <li id="length">❌ At least 8 characters</li>
-      <li id="uppercase">❌ Uppercase letter</li>
-      <li id="lowercase">❌ Lowercase letter</li>
-      <li id="number">❌ Number</li>
-      <li id="special">❌ Special character</li>
-    </ul>
-      </div>
+  <div class="progress-container">
+    <div class="progress-fill" id="strengthBar"></div>
+  </div>
+
+  <p id="feedback">Start typing...</p>
 </div>
 
-<script src="script.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
