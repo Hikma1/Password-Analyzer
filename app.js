@@ -43,10 +43,11 @@ function analyzePassword() {
   progressBar.classList.add("medium");
   feedback.textContent = "Medium 🙂";
 }
-    else if (score <= 80) {
-      progressBar.style.backgroundColor = "lightgreen";
-      feedback.textContent = "Strong";
-    }
+   else if (score <= 80) {
+  progressBar.style.width = "80%";
+  progressBar.classList.add("strong");
+  feedback.textContent = "Strong 💪";
+}
     else {
       progressBar.style.backgroundColor = "green";
       feedback.textContent = "Very Strong";
