@@ -49,9 +49,10 @@ function analyzePassword() {
   feedback.textContent = "Strong 💪";
 }
     else {
-      progressBar.style.backgroundColor = "green";
-      feedback.textContent = "Very Strong";
-    }
+  progressBar.style.width = "100%";
+  progressBar.classList.add("very-strong");
+  feedback.textContent = "Very Strong 🔥";
+}
   }
     function updateCheck(id, condition) {
       checks[id].textContent = condition ? "✔ " + checks[id].dataset.text : "✘ " + checks[id].dataset.text;   
@@ -66,3 +67,6 @@ themeToggle.addEventListener("click", () => {
   themeToggle.textContent = document.body.classList.contains("dark") ? "☀️" : "🌙";
 });
 
+progressBar.addEventListener("animationend", () => {
+  progressBar.classList.remove("strength-animate");
+});
