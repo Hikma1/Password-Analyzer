@@ -27,16 +27,17 @@ function analyzePassword() {
     progressBar.style.width = score + "%";
 
     progressBar.className = "";
-progressBar.classList.add("strength-animate");
+    progressBar.classList.add("strength-animate");
     if (score <= 20) {
   progressBar.style.width = "20%";
   progressBar.classList.add("weak");
   feedback.textContent = "Very Weak 😟";
 }
     else if (score <= 40) {
-      progressBar.style.backgroundColor = "orange";
-      feedback.textContent = "Weak";
-    }
+  progressBar.style.width = "40%";
+  progressBar.classList.add("weak");
+  feedback.textContent = "Weak 😕";
+}
     else if (score <= 60) {
       progressBar.style.backgroundColor = "yellow";
       feedback.textContent = "Moderate";
