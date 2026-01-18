@@ -17,4 +17,6 @@ body {
 .glass-card{
   width: 360px;
   padding: 30px;
+  border-radius: 18px;
+  backdrop-filter: blur(15px);
 }
