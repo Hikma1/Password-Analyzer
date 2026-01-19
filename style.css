@@ -49,4 +49,7 @@ input{
   position: absolute;
   right: 12px;
   top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #333;
 }
