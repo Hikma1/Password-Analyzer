@@ -76,3 +76,7 @@ input{
   background: #ff4d4d;
   box-shadow: 0 0 15px #ff4d4d;
 }
+.medium {
+  background: #ffc107;
+  box-shadow: 0 0 15px #ffc107;
+}
