@@ -84,3 +84,7 @@ input{
   background: #00e676;
   box-shadow: 0 0 15px #00e676;
 }
+.very-strong {
+  background: #00ffff;
+  box-shadow: 0 0 20px #00ffff;
+}
