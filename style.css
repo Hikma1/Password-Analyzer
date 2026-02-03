@@ -62,3 +62,8 @@ input{
   border-radius: 20px;
   overflow: hidden;
 }
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  transition: width 0.4s ease, box-shadow 0.4s ease;
+}
