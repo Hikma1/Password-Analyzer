@@ -80,3 +80,7 @@ input{
   background: #ffc107;
   box-shadow: 0 0 15px #ffc107;
 }
+.strong {
+  background: #00e676;
+  box-shadow: 0 0 15px #00e676;
+}
