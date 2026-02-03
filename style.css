@@ -72,3 +72,7 @@ input{
   margin-top: 15px;
   font-size: 14px;
 }
+.weak {
+  background: #ff4d4d;
+  box-shadow: 0 0 15px #ff4d4d;
+}
