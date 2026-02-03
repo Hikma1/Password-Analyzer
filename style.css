@@ -53,3 +53,12 @@ input{
   cursor: pointer;
   color: #333;
 }
+/* Progress Bar */
+.progress-container {
+  margin-top: 20px;
+  height: 12px;
+  width: 100%;
+  background: rgba(255,255,255,0.2);
+  border-radius: 20px;
+  overflow: hidden;
+}
