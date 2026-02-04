@@ -4,4 +4,6 @@ const feedback = document.getElementById("feedback");
 const toggleEye = document.getElementById("toggleEye");
 /* Eye Toggle */
 toggleEye.addEventListener("click", () => {
+   passwordInput.type =
+    passwordInput.type === "password" ? "text" : "password";
 });
