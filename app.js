@@ -7,3 +7,10 @@ toggleEye.addEventListener("click", () => {
    passwordInput.type =
     passwordInput.type === "password" ? "text" : "password";
 });
+passwordInput.addEventListener("input", () => {
+  const password = passwordInput.value;
+  let score = 0;
+  if (password.length >= 8) score += 20;
+
+
+  }));
