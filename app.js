@@ -26,6 +26,10 @@ passwordInput.addEventListener("input", () => {
     strengthBar.style.width = "40%";
     strengthBar.classList.add("weak");
     feedback.textContent = "Weak 😕";
+  } else if (score <= 60) {
+    strengthBar.style.width = "60%";
+    strengthBar.classList.add("medium");
+    feedback.textContent = "Medium 🙂";
   } 
 
 });
