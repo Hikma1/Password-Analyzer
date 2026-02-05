@@ -34,6 +34,10 @@ passwordInput.addEventListener("input", () => {
     strengthBar.style.width = "80%";
     strengthBar.classList.add("strong");
     feedback.textContent = "Strong 💪";
+  }else {
+    strengthBar.style.width = "100%";
+    strengthBar.classList.add("very-strong");
+    feedback.textContent = "Very Strong 🔥";
   }
 
 });
