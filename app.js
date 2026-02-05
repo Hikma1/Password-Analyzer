@@ -11,6 +11,8 @@ passwordInput.addEventListener("input", () => {
   const password = passwordInput.value;
   let score = 0;
   if (password.length >= 8) score += 20;
+  if (/[A-Z]/.test(password)) score += 20;
+  if (/[a-z]/.test(password)) score += 20;
 
 
   }));
