@@ -16,5 +16,7 @@ passwordInput.addEventListener("input", () => {
   if (/\d/.test(password)) score += 20;
   if (/[\W_]/.test(password)) score += 20;
 
+  strengthBar.className = "progress-fill";
+
 
   }));
