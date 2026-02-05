@@ -18,5 +18,10 @@ passwordInput.addEventListener("input", () => {
 
   strengthBar.className = "progress-fill";
 
+   if (score <= 20) {
+    strengthBar.style.width = "20%";
+    strengthBar.classList.add("weak");
+    feedback.textContent = "Very Weak 😟";
+  } 
 
-  }));
+});
