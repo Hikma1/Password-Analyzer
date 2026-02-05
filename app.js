@@ -13,6 +13,8 @@ passwordInput.addEventListener("input", () => {
   if (password.length >= 8) score += 20;
   if (/[A-Z]/.test(password)) score += 20;
   if (/[a-z]/.test(password)) score += 20;
+  if (/\d/.test(password)) score += 20;
+  if (/[\W_]/.test(password)) score += 20;
 
 
   }));
