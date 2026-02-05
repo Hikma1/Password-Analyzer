@@ -30,6 +30,10 @@ passwordInput.addEventListener("input", () => {
     strengthBar.style.width = "60%";
     strengthBar.classList.add("medium");
     feedback.textContent = "Medium 🙂";
-  } 
+  } else if (score <= 80) {
+    strengthBar.style.width = "80%";
+    strengthBar.classList.add("strong");
+    feedback.textContent = "Strong 💪";
+  }
 
 });
