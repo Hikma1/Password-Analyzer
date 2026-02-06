@@ -46,4 +46,13 @@ const ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
+let particles = Array.from({ length: 60 }, () => (
+  {
+  x: Math.random() * canvas.width,
+  y: Math.random() * canvas.height,
+  r: Math.random() * 2 + 1,
+  dx: Math.random() * 0.5,
+  dy: Math.random() * 0.5
+}));
+
 });
