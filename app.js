@@ -67,6 +67,10 @@ ctx.clearRect(0, 0, canvas.width, canvas.height);
      p.x += p.dx;
     p.y += p.dy;
 
+
+    if (p.x > canvas.width) p.x = 0;
+    if (p.y > canvas.height) p.y = 0;
+
     });
     requestAnimationFrame(animateParticles);
 }
