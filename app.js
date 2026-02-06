@@ -54,5 +54,13 @@ let particles = Array.from({ length: 60 }, () => (
   dx: Math.random() * 0.5,
   dy: Math.random() * 0.5
 }));
-
 });
+
+function animateParticles() {
+
+
+    });
+    requestAnimationFrame(animateParticles);
+}
+animateParticles();
+
