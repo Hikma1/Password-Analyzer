@@ -40,4 +40,10 @@ passwordInput.addEventListener("input", () => {
     feedback.textContent = "Very Strong 🔥";
   }
 
+  /* Floating Particles */
+const canvas = document.getElementById("particles");
+const ctx = canvas.getContext("2d");
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
 });
