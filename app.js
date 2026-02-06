@@ -39,7 +39,7 @@ passwordInput.addEventListener("input", () => {
     strengthBar.classList.add("very-strong");
     feedback.textContent = "Very Strong 🔥";
   }
-
+});
   /* Floating Particles */
 const canvas = document.getElementById("particles");
 const ctx = canvas.getContext("2d");
@@ -54,9 +54,15 @@ let particles = Array.from({ length: 60 }, () => (
   dx: Math.random() * 0.5,
   dy: Math.random() * 0.5
 }));
-});
+
 
 function animateParticles() {
+ctx.clearRect(0, 0, canvas.width, canvas.height);
+  particles.forEach(p => {
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+    ctx.fillStyle = "rgba(0,255,255,0.6)";
+    ctx.fill();
 
 
     });
